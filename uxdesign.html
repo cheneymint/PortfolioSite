@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Stella Wei's UX Design portfolio, featuring projects like the Eclipse Soundscape Map Redesign, where accessibility and user experience were significantly improved.">
+    <title>Project 1 - Eclipse Soundscape Map Redesign | Stella Wei UX Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #cccccc;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 500;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #aaa;
+            text-decoration: none;
+            font-weight: 300;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .section p,
+        .section ul li {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section ul li:before {
+            content: "•";
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .media-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .media-section img,
+        .media-section video {
+            max-width: 70%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .media-section img:hover,
+        .media-section video:hover {
+            transform: scale(1.02);
+        }
+
+        .testimonial {
+            margin-top: 20px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .testimonial blockquote {
+            margin: 0;
+            color: #bbb;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .section p {
+                font-size: 1em;
+            }
+
+            .media-section img,
+            .media-section video {
+                max-width: 90%;
+            }
+
+            footer {
+                padding: 10px;
+            }
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #4e8ef7;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            text-decoration: none;
+            display: none;
+        }
+
+        #back-to-top:hover {
+            background-color: #3973bf;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Stella Wei's UX Design Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="container section">
+        <h2>Eclipse Soundscape Map Redesign</h2>
+        <p>The goal of this project was to improve the accessibility and usability of NASA's Eclipse Soundscape Map by
+            refining the user experience and interface design.</p>
+    </section>
+
+    <!-- Research Section -->
+    <section class="container section" id="research">
+        <h2>🔍 Research</h2>
+        <p>Before starting the design, thorough research was conducted to understand user needs, pain points, and the
+            problem areas in the existing map design.</p>
+
+        <div class="media-section">
+            <h3>Research Insights</h3>
+            <img src="compare.png" alt="Research insights visuals">
+
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="container section" id="design">
+        <h2>🎨 Design</h2>
+        <p>After gathering insights from research, I moved on to designing the wireframes and high-fidelity prototypes
+            that solved the key pain points identified.</p>
+        <ul>
+            <li>Created user personas based on research findings.</li>
+            <li>Developed low-fidelity wireframes for initial user flow validation.</li>
+            <li>Iterated the design based on usability tests and feedback.</li>
+        </ul>
+
+    </section>
+
+    <!-- Prototyping Section -->
+    <section class="container section" id="prototyping">
+        <h2>⚙️ Prototyping</h2>
+        <p>The high-fidelity prototype was created using Figma to demonstrate the interactive elements and final design
+            of the mobile app. Below is the embedded prototype for the Eclipse Soundscape Map.</p>
+        <div class="media-section">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/6VCyN7XYb5BmCydT69tL97/Eclipse-Soundscape-Map-Design?page-id=170%3A6822&node-id=249-5974&viewport=286%2C209%2C0.11&scaling=scale-down&starting-point-node-id=193%3A5683&embed-host=share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="container section" id="testing">
+        <h2>🧪 Identify Problems</h2>
+        <p>Accessibility issues - the grayscale, obscure fonts, and lack of alternative text descriptions.Visual clarity
+            - Insufficient color contrast. Not allowing users to switch between dark mode and light mode.Not allowing
+            users to adjust speed rate of screenreader. </p>
+        <ul>
+            <li>Users found the new navigation significantly easier to use.</li>
+            <li>Accessibility improvements were appreciated by visually impaired users.</li>
+            <li>Further iterations were made based on feedback for optimal usability.</li>
+        </ul>
+
+        <div class="testimonial">
+            <blockquote>
+                <p>"The new map is so much easier to navigate, and the accessibility features make a huge difference for
+                    me as a visually impaired user."</p>
+                <footer>— User Test Participant</footer>
+            </blockquote>
+        </div>
+
+
+    </section>
+    <!-- Code Optimization Section -->
+    <section class="container section" id="code-optimization">
+        <h2>⚡ Code Optimization</h2>
+        <p>Throughout the development of this project, I implemented several optimizations to enhance the performance,
+            maintainability, and accessibility of the codebase. Below are key strategies I used to optimize the design:
+        </p>
+
+
+
+        <h3>2. Accessibility Improvements</h3>
+        <ul>
+            <li>Enhanced keyboard navigation for seamless user interaction by allowing users to navigate using the arrow
+                keys.</li>
+            <li>Ensured semantic HTML and used ARIA attributes to improve accessibility for screen readers.</li>
+            <li>Included alt attributes for all images to improve both accessibility and SEO.</li>
+        </ul>
+        <img src="codes.png" alt="code-optimization">
+
+
+        <h3>4. SEO Optimization</h3>
+        <ul>
+            <li>Used descriptive meta tags and alt attributes to improve search engine discoverability.</li>
+            <li>Ensured that all elements on the page were optimized for mobile viewing (responsive design).</li>
+        </ul>
+    </section>
+
+    <!-- Final Product Section -->
+    <section class="container section" id="final-product">
+        <h2>🚀 Final Product</h2>
+        <p>After multiple iterations and testing, the final version of the Eclipse Soundscape Map was launched. The
+            final design resolved many of the pain points identified during research and significantly improved the user
+            experience.</p>
+        <div class="media-section">
+            <h3>Final Map Screenshot</h3>
+            <img src="Eclipse Map Web.png" alt="Figma Wireframe Screenshot">
