@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Colorful Cubes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .client-line {
+            text-align: center;
+            font-size: 18px;
+            color: #ccc;
+            margin-top: -15px;
+            /* Adjust if needed to bring it closer to the title */
+        }
+
+        .section {
+            margin: 20px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+            color: #ccc;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .cube {
+            width: 200px;
+            margin: 15px;
+            background-color: #444;
+            border: 1px solid #555;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .cube img {
+            width: 100%;
+            border-bottom: 1px solid #555;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .cube h3 {
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .cube p {
+            padding: 0 10px;
+            color: #ccc;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .image-section img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Accessible Colorful Cubes - UX Design</h1>
+    <!-- Client line -->
+    <div class="client-line">Client: I-Hope Academy</div>
+
+    <!-- Red Cube Section -->
+    <div class="section" id="redCube">
+        <h2>Red Cube</h2>
+        <div class="image-section">
+            <img src="groupred.png" alt="Red Cube Image">
+        </div>
+        <ul id="redCubeList"></ul>
+    </div>
+
+    <!-- Yellow Cube Section -->
+    <div class="section" id="yellowCube">
+        <h2>Yellow Cube</h2>
+        <div class="image-section">
+            <img src="groupyellow.png" alt="Yellow Cube Image">
+        </div>
+        <ul id="yellowCubeList"></ul>
+    </div>
+
+    <!-- Blue Cube Section -->
+    <div class="section" id="blueCube">
+        <h2>Blue Cube</h2>
+        <div class="image-section">
+            <img src="groupblue.png" alt="Blue Cube Image">
+        </div>
+        <ul id="blueCubeList"></ul>
+    </div>
+
+    <!-- Problem Statement Section (Moved to Bottom) -->
+    <div class="section" id="problemStatement">
+        <h2>Problem Statement</h2>
+        <p id="problemStatementText"></p>
+    </div>
+
+    <!-- Design Process Section (Moved to Bottom) -->
+    <div class="section" id="designProcess">
+        <h2>Design Process</h2>
+        <ul id="designProcessList"></ul>
+    </div>
+
+    <script>
+        // Red Cube (Design Process) content
+        const redCubeData = [
+            "Shape/Object: Stop Sign, Traffic Light",
+            "Fruits/Food: Apples, Cherries, Tomatoes",
+            "Feelings: Anger, Aggression, Passion",
+            "Textures: Zig Zag, Expressive Line Work"
+        ];
+
+        const redCubeList = document.getElementById("redCubeList");
+
+        redCubeData.forEach(item => {
+            const listItem = document.createElement("li");
+            listItem.textContent = item;
+            redCubeList.appendChild(listItem);
+        });
+
+        // Yellow Cube content (Formatted as a list)
+        const yellowCubeData = [
+            "Shape/Object: Sun, Star, Minions",
+            "Fruits/Food: Banana, Cheese, Pineapple",
+            "Feelings: Energy, Hope",
+            "Textures: Smooth"
+        ];
+
+        const yellowCubeList = document.getElementById("yellowCubeList");
+
+        yellowCubeData.forEach(item => {
+            const listItem = document.createElement("li");
+            listItem.textContent = item;
+            yellowCubeList.appendChild(listItem);
+        });
+
+        // Blue Cube content
+        const blueCubeData = [
+            "Shape/Object: Water Droplet, Clouds",
+            "Fruits/Food: Blueberry",
+            "Feelings: Calm, Mystery, Sadness",
+            "Textures: Curves, Repetitive Rings"
+        ];
+
+        const blueCubeList = document.getElementById("blueCubeList");
+
+        blueCubeData.forEach(item => {
+            const listItem = document.createElement("li");
+            listItem.textContent = item;
+            blueCubeList.appendChild(listItem);
+        });
+
+        // Problem Statement content
+        const problemStatementText = "Children born with visual impairments often face challenges when it comes to learning about color relationships. Due to their limited ability to perceive color, they may struggle to grasp concepts that many others take for granted. Nevertheless, it is important for these children to develop an understanding of color associations, as this knowledge can significantly enhance their cognitive and social development.";
+        document.getElementById("problemStatementText").textContent = problemStatementText;
+
+        // Design Process content
+        const designProcessData = [
+            "Step 1: Research the use of color and shapes to improve learning for visually impaired children.",
+            "Step 2: Analyze how textures and tactile features can be incorporated into cube designs for sensory feedback.",
+            "Step 3: Iterate on cube designs based on feedback from user testing with children and educators."
+        ];
+
+        const designProcessList = document.getElementById("designProcessList");
+
+        designProcessData.forEach(item => {
+            const listItem = document.createElement("li");
+            listItem.textContent = item;
+            designProcessList.appendChild(listItem);
+        });
+
+    </script>
+</body>
+
+</html>
